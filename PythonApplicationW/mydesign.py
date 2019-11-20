@@ -2,25 +2,23 @@
 
 # Form implementation generated from reading ui file 'mydesign.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.0
+# Created by: PyQt5 UI code generator 5.11.3
 #
 # WARNING! All changes made in this file will be lost!
 
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(911, 93)
+        Dialog.resize(838, 93)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Dialog.sizePolicy().hasHeightForWidth())
         Dialog.setSizePolicy(sizePolicy)
         self.horizontalLayoutWidget = QtWidgets.QWidget(Dialog)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 30, 891, 40))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 30, 821, 40))
         self.horizontalLayoutWidget.setMaximumSize(QtCore.QSize(16777215, 40))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
@@ -32,13 +30,14 @@ class Ui_Dialog(object):
         sizePolicy.setVerticalStretch(30)
         sizePolicy.setHeightForWidth(self.lineEdit.sizePolicy().hasHeightForWidth())
         self.lineEdit.setSizePolicy(sizePolicy)
-        self.lineEdit.setMaximumSize(QtCore.QSize(1050, 40))
+        self.lineEdit.setMaximumSize(QtCore.QSize(900, 40))
         font = QtGui.QFont()
         font.setFamily("MS Sans Serif")
         font.setPointSize(24)
         font.setBold(True)
         font.setWeight(75)
         self.lineEdit.setFont(font)
+        self.lineEdit.setText("")
         self.lineEdit.setObjectName("lineEdit")
         self.horizontalLayout.addWidget(self.lineEdit)
         self.pushButton = QtWidgets.QPushButton(self.horizontalLayoutWidget)
@@ -51,5 +50,5 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Parity bits"))
-        self.lineEdit.setText(_translate("Dialog", "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"))
         self.pushButton.setText(_translate("Dialog", "Change bits"))
+
