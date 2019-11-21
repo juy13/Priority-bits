@@ -11,12 +11,16 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
+        Dialog.setEnabled(True)
         Dialog.resize(838, 93)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Dialog.sizePolicy().hasHeightForWidth())
         Dialog.setSizePolicy(sizePolicy)
+        Dialog.setMinimumSize(QtCore.QSize(838, 93))
+        Dialog.setMaximumSize(QtCore.QSize(838, 93))
+        Dialog.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
         self.horizontalLayoutWidget = QtWidgets.QWidget(Dialog)
         self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 30, 821, 40))
         self.horizontalLayoutWidget.setMaximumSize(QtCore.QSize(16777215, 40))

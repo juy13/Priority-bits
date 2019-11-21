@@ -20,7 +20,6 @@ class Mywindow(QtWidgets.QMainWindow):
 	def bin_format(self, integer, length):
 		return f'{integer:0>{length}b}'
 
-
 	def bit_ord(self, str_came):
 		i = 0
 		str_out = ''
